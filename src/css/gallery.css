@@ -1,88 +1,29 @@
-.feedback-form {
-  max-width: 408px;
-  height: 100%;
-  padding: 24px;
-  border-radius: 8px;
-  background: #fff;
-  margin: auto;
+.container {
+  max-width: 1128px;
+  padding: 24px 0;
+  margin: 0 auto;
 }
 
-.feedback-form label {
-  display: block;
-
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1128px;
 }
 
-.feedback-form input {
-  display: block;
-  width: 100%;
-  border: 1px solid #808080;
-  border-radius: 4px;
-  padding: 8px 16px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  outline: none;
-
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-
-  transition: border-color 0.3s;
+.gallery-item {
+  flex-basis: 360px;
+  height: 200px;
 }
 
-.feedback-form input:hover,
-.feedback-form input:focus,
-.feedback-form textarea:hover,
-.feedback-form textarea:focus {
-  border-color: #000;
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
-.feedback-form textarea {
-  border: 1px solid #808080;
-  border-radius: 4px;
-  width: 100%;
-  height: 112px;
-  padding: 8px 16px;
-
-  margin-top: 8px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-
-  resize: none;
-  outline: none;
-  transition: border-color 0.3s;
-}
-
-.feedback-form button {
-  display: inline-block;
-  margin-top: 16px;
-  border-radius: 8px;
-  padding: 8px 16px;
-  width: 95px;
-  height: 40px;
-  font-weight: 500;
-  color: #fff;
-  background: #4e75ff;
-  border: none;
-  border-color: transparent;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s;
-}
-
-.feedback-form button:hover {
-  background-color: #6c8cff;
+.gallery-image:hover,
+.gallery-image:focus {
+  transform: scale(1.05);
 }
